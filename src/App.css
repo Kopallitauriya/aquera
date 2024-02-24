@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url("https://fonts.googleapis.com/css?family=Anton");
 
 .container {
   padding: 1rem 0;
@@ -21,7 +21,7 @@
   z-index: -1; /* Send video to the background */
 }
 
-.inner-container{
+.inner-container {
   width: 95%;
   min-height: 70vh;
   display: flex;
@@ -30,12 +30,11 @@
   flex-wrap: wrap;
   /* border: 1px solid rgb(211, 211, 211); */
   padding: 2rem;
-
 }
 
-.button{
+.button {
   width: 25%;
-  height:14rem;  
+  height: 14rem;
   border: none;
   outline: none;
   background-color: transparent;
@@ -47,12 +46,12 @@
   filter: none;
 }
 
-.card{
+.card {
   width: 100%;
-  height:14rem;  
+  height: 14rem;
   text-decoration: none;
   color: inherit;
-  
+
   border: none;
   outline: none;
   background-color: transparent;
@@ -68,30 +67,29 @@
   transform: scale(1.1);
 }
 
- .inside-card{
-  width: 100%;  
-  height:fit-content;
-} 
-
-.card-container{
-   border-radius:2rem
+.inside-card {
+  width: 100%;
+  height: fit-content;
 }
 
-.header{
+.card-container {
+  border-radius: 2rem;
+}
+
+.header {
   /* border: 1px solid black; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
-  border:1x solid black;
+  border: 1x solid black;
   font-family: "Comic Neue", cursive;
   font-weight: 600;
-  font-size:xx-large;
+  font-size: xx-large;
   color: white;
   transition: transform 2s ease-in-out;
-  color: #FFD700;
-
+  color: #ffd700;
 }
 
 .header.zoom-out {
@@ -99,15 +97,14 @@
   width: 100%;
 }
 
-.pagination{
+.pagination {
   width: 100%;
-  height:10rem;
+  height: 10rem;
   border: 1px solid white;
   background-color: white;
 }
 
-
-.magazine_card{
+.magazine_card {
   margin: 2rem 2rem;
   position: relative;
   width: 400px;
@@ -116,31 +113,32 @@
   height: 300px;
   border: 1px solid;
   box-shadow: 0 0 10px 4px;
-  transition: .6s;
+  transition: 0.6s;
   overflow: hidden;
   display: flex;
   justify-content: center;
   cursor: pointer;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 5px rgba(255, 215, 0, 0.5);
 }
 
-.shadow{
+.shadow {
   position: absolute;
-  top: 0%;left: 0%;
+  top: 0%;
+  left: 0%;
   width: 100%;
   height: 100%;
-  transition: .6s;
+  transition: 0.6s;
 }
 
-.magazine_card img{
+.magazine_card img {
   position: relative;
   filter: contrast(150%);
-  transition: .6s;
+  transition: 0.6s;
 }
 
-.magazine_title{
+.magazine_title {
   position: absolute;
   z-index: 10;
   top: 75%;
@@ -149,9 +147,11 @@
   font-size: 26pt;
   width: 100%;
   height: 20%;
-  display: flex;justify-content: center; align-items: center;
-  background: rgba(0,0,0,.4);
-  transition: .6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
   letter-spacing: 4px;
 }
 .magazine_climate {
@@ -159,13 +159,13 @@
   z-index: 0;
   top: 75%;
   left: 0;
-  color:transparent;
+  color: transparent;
   font-size: 20pt;
-  text-align:center;
+  text-align: center;
   width: 100%;
   height: 20%;
-  background: rgba(0,0,0,.4);
-  transition: .6s;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
   letter-spacing: 4px;
 }
 
@@ -174,16 +174,16 @@
   z-index: 0;
   top: 80%;
   left: 0;
-  color:transparent;
+  color: transparent;
   font-size: 10pt;
   width: 100%;
-  text-align:center;
+  text-align: center;
   height: 20%;
-  background: rgba(0,0,0,.4);
-  transition: .6s;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.6s;
   letter-spacing: 4px;
 }
-.magazine_desc{
+.magazine_desc {
   position: absolute;
   z-index: 0;
   top: 80%;
@@ -194,92 +194,89 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .6s;
-  text-align:center;
+  transition: 0.6s;
+  text-align: center;
   transition-delay: 0s;
   opacity: 0;
 }
 
-.splitter{
+.splitter {
   position: absolute;
-  top: 398px; left: 0%;
+  top: 398px;
+  left: 0%;
   width: 100%;
   height: 0;
   background: #fff;
-  transition: .6s;
+  transition: 0.6s;
   opacity: 0;
 }
-.splitter::before, .splitter::after{
+.splitter::before,
+.splitter::after {
   position: absolute;
   z-index: 11;
-  top: 0;left: 0;
-  content: ' ';
+  top: 0;
+  left: 0;
+  content: " ";
   width: 100%;
   height: 2px;
   background: #fff;
-  transition: .6s;
+  transition: 0.6s;
   transition-delay: 0s;
 }
-.magazine_card:hover img{
+.magazine_card:hover img {
   transform: scale(1.2);
 }
-.magazine_card:hover .shadow{
+.magazine_card:hover .shadow {
   box-shadow: inset 0 0 10px 4px;
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, 0.4);
 
-  transform: scale(.85);
+  transform: scale(0.85);
 }
 
-.magazine_card:hover .magazine_climate{
+.magazine_card:hover .magazine_climate {
   transform: translateY(-310%);
   background: transparent;
   color: white;
 }
-.magazine_card:hover .magazine_population{
+.magazine_card:hover .magazine_population {
   transform: translateY(-210%);
   background: transparent;
   color: white;
 }
-.magazine_card:hover .magazine_desc{
+.magazine_card:hover .magazine_desc {
   transform: translateY(-120%);
   opacity: 1;
-  transition-delay: .6s;
+  transition-delay: 0.6s;
 }
-.magazine_card:hover .splitter{
+.magazine_card:hover .splitter {
   transform: translateY(-12em);
   left: 10%;
   width: 80%;
   opacity: 1;
 }
 
-.magazine_card:hover .splitter::before{
+.magazine_card:hover .splitter::before {
   transform: rotate(-20deg);
-  transition-delay: .6s;
-  opacity: .6;
+  transition-delay: 0.6s;
+  opacity: 0.6;
 }
-.magazine_card:hover .splitter::after{
+.magazine_card:hover .splitter::after {
   transform: rotate(20deg);
-  transition-delay: .6s;
-  opacity: .6;
+  transition-delay: 0.6s;
+  opacity: 0.6;
 }
 @keyframes rotate {
-  0%{
-    
+  0% {
   }
-  100%{
+  100% {
     transform: rotate(45deg);
   }
 }
 
-
-.pagination{
+.pagination {
   background-color: transparent;
   color: white;
-
 }
-
-
-
 
 .popup {
   position: fixed;
@@ -289,11 +286,11 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1000;
-  }
-  
-  .popup-inner {
+}
+
+.popup-inner {
   background-color: white;
   position: absolute;
   left: 50%;
@@ -304,11 +301,11 @@
   box-shadow: 0px 0px 50px 10px rgba(255, 215, 0, 0.5);
   width: 70%;
   z-index: 1000;
-  border-radius: 10px;  
-  color: #FFD700;  
-  max-width: 800px;  
-  background: #000;  
-  background-image: url('https://www.transparenttextures.com/patterns/star-wars.png');  
+  border-radius: 10px;
+  color: #ffd700;
+  max-width: 800px;
+  background: #000;
+  background-image: url("https://www.transparenttextures.com/patterns/star-wars.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,81 +314,81 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
   background-image: url("../src/photos/WBVk.gif");
-  }
-
-  .popup-container{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .popup-inner h1 {  
-    margin-top: 0;  
-    font-size: 2em;  
-    text-align: center;
-  }  
-  
-  .popup-inner p {  
-    font-size: 1.2em;  
-    line-height: 1.5;  
-  }  
-
-  .break {
-    width: 100%;
-    height: 2px;
-    margin: 2rem 0;
-    color: white;
-  }
-  .row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem;
-  }
-  .residents{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;;
-  }
-  .residents > ul {  
-      padding-left: 20px;  
-  }  
-
-  .residents > ul > li {  
-      list-style: none;  
-      margin: 10px 0;  
-      font-size: 17px;;
-  }
-  .residents > ul > li> span {  
-    text-transform: capitalize;
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
 }
-    
-  .popup-inner button {  
-      position: absolute;  
-      top: 20px;  
-      right: 20px;  
-      padding: 10px 20px;  
-      font-size: 1em;  
-      border: none;  
-      background: #FFD700;  
-      color: #000;  
-      cursor: pointer;  
-      border-radius: 5px;  
-      transition: background 0.3s ease;  
-  }  
-    
-  .popup-inner button:hover {  
-      background: #ffa500;  
-  }  
 
-  .paginatedview{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+.popup-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.popup-inner h1 {
+  margin-top: 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.popup-inner p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.break {
+  width: 100%;
+  height: 2px;
+  margin: 2rem 0;
+  color: white;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+.residents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.residents > ul {
+  padding-left: 20px;
+}
+
+.residents > ul > li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 17px;
+}
+.residents > ul > li > span {
+  text-transform: capitalize;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.popup-inner button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background: #ffd700;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.popup-inner button:hover {
+  background: #ffa500;
+}
+
+.paginatedview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
