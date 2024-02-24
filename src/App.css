@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-
-
 .container {
-  padding: 0;
-  margin: 0;
-  /* filter: blur(5px); */
-  background-color: rgb(17, 17, 17);
-  /* background-image: url("../src//photoes/WBVk.gif"); */
-   background-size: "cover";
+  padding: 1rem 0;
+  background-image: url("../src/photos/WBVk.gif");
+  background-size: "cover";
   width: 100vw;
   min-height: 100vh;
-  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
+
 .container video {
   position: absolute;
   top: 0;
@@ -25,7 +23,7 @@
 
 .inner-container{
   width: 95%;
-  height: 95%;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,18 +83,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height:13rem;
+  margin: 2rem 0;
   border:1x solid black;
   font-family: "Comic Neue", cursive;
   font-weight: 600;
   font-size:xx-large;
   color: white;
   transition: transform 2s ease-in-out;
+  color: #FFD700;
 
 }
+
 .header.zoom-out {
-  transform: scale(2.0 );
+  transform: scale(1.5);
+  width: 100%;
 }
+
 .pagination{
   width: 100%;
   height:10rem;
@@ -105,14 +107,12 @@
 }
 
 
-
-
-
-
 .magazine_card{
-  margin: 2rem auto;
+  margin: 2rem 2rem;
   position: relative;
   width: 400px;
+  min-width: 400px;
+  flex-wrap: wrap;
   height: 300px;
   border: 1px solid;
   box-shadow: 0 0 10px 4px;
@@ -122,7 +122,8 @@
   justify-content: center;
   cursor: pointer;
   font-family: 'Anton', sans-serif;
- 
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(255, 215, 0, 0.5);
 }
 
 .shadow{
@@ -138,6 +139,7 @@
   filter: contrast(150%);
   transition: .6s;
 }
+
 .magazine_title{
   position: absolute;
   z-index: 10;
@@ -159,23 +161,24 @@
   left: 0;
   color:transparent;
   font-size: 20pt;
+  text-align:center;
   width: 100%;
   height: 20%;
-  display: flex;justify-content: center; align-items: center;
   background: rgba(0,0,0,.4);
   transition: .6s;
   letter-spacing: 4px;
 }
+
 .magazine_population {
   position: absolute;
   z-index: 0;
-  top: 75%;
+  top: 80%;
   left: 0;
   color:transparent;
   font-size: 10pt;
   width: 100%;
+  text-align:center;
   height: 20%;
-  display: flex;justify-content: center; align-items: center;
   background: rgba(0,0,0,.4);
   transition: .6s;
   letter-spacing: 4px;
@@ -192,6 +195,7 @@
   justify-content: center;
   align-items: center;
   transition: .6s;
+  text-align:center;
   transition-delay: 0s;
   opacity: 0;
 }
@@ -273,3 +277,121 @@
   color: white;
 
 }
+
+
+
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+  }
+  
+  .popup-inner {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px 10px rgba(255, 215, 0, 0.5);
+  width: 70%;
+  z-index: 1000;
+  border-radius: 10px;  
+  color: #FFD700;  
+  max-width: 800px;  
+  background: #000;  
+  background-image: url('https://www.transparenttextures.com/patterns/star-wars.png');  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 80%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  background-image: url("../src/photos/WBVk.gif");
+  }
+
+  .popup-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .popup-inner h1 {  
+    margin-top: 0;  
+    font-size: 2em;  
+    text-align: center;
+  }  
+  
+  .popup-inner p {  
+    font-size: 1.2em;  
+    line-height: 1.5;  
+  }  
+
+  .break {
+    width: 100%;
+    height: 2px;
+    margin: 2rem 0;
+    color: white;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+  }
+  .residents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;;
+  }
+  .residents > ul {  
+      padding-left: 20px;  
+  }  
+
+  .residents > ul > li {  
+      list-style: none;  
+      margin: 10px 0;  
+      font-size: 17px;;
+  }
+  .residents > ul > li> span {  
+    text-transform: capitalize;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+    
+  .popup-inner button {  
+      position: absolute;  
+      top: 20px;  
+      right: 20px;  
+      padding: 10px 20px;  
+      font-size: 1em;  
+      border: none;  
+      background: #FFD700;  
+      color: #000;  
+      cursor: pointer;  
+      border-radius: 5px;  
+      transition: background 0.3s ease;  
+  }  
+    
+  .popup-inner button:hover {  
+      background: #ffa500;  
+  }  
+
+  .paginatedview{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
