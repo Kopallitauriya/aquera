@@ -1,3 +1,5 @@
+# Deployed: https://aquera-kohl.vercel.app/
+
 # Star Wars Planets Directory  
   
 This project is a Star Wars Planets Directory web application. It fetches and displays information about Star Wars planets and their notable residents using the Star Wars API (SWAPI).  
