@@ -6,6 +6,7 @@ const Popup = (props) => {
         <div className="popup">
             <div className="popup-inner">
                 <div className='popup-container'>
+                    <button onClick={() => props.handleCloseModal()}>X</button>
                     <h1 >{data.name}</h1>
                     <span className='break'/>
                     <div className='row'>
@@ -35,7 +36,6 @@ const Popup = (props) => {
                         </ul>
                     </div>
                 </div>
-                <button onClick={() => props.handleCloseModal()}>Close</button>
             </div>
         </div>
     )

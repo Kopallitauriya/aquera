@@ -17,7 +17,6 @@ const Home = () => {
     const [url, setUrl] = useState([])
 
     const handleOpenModal = (modal) => {
-        console.log(modal, "modal")
         setShowModal(modal);
     };
 
@@ -77,12 +76,12 @@ const Home = () => {
     return (
         <>
             <div className='container'>
-                <video autoPlay loop muted>
-                    <source src="C:\Users\hp world\Desktop\aquera\aquera\aquera\src\photoes\vedio.mp4" type="video/mp4" />
-                </video>
                 <div className={headerAnimation ? 'header zoom-out' : 'header'}>
                     Welcome to the world of Planets!
-
+                </div>
+                <div className='sub-header'>
+                    <h1>"DO OR DO NOT, THERE IS NO TRY."</h1>
+                    <p>~ YODA</p>
                 </div>
                 <div className='inner-container'>
 
